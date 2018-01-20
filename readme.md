@@ -4,7 +4,9 @@
 
 clone the repository and then run `npm install` 
 
-Then, just type `node katex_pipeline.js`. You should see the output in your console. 
+Then, just type `node katex_pipeline.js`. You should an array of parsed output in your console. 
+
+You will need to use ctrl+c to close out the cluster.
 
 All of the relevent code is in katex_pipeline.js (this code shouldn't be too hard to read if you have some familiarity with spark).
 
