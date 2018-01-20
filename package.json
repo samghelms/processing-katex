@@ -1,0 +1,22 @@
+{
+  "name": "katex_pipeline",
+  "version": "1.0.0",
+  "description": "How to run: `node katex_pipeline.js`",
+  "main": "katex_pipeline.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/katex_pipeline.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "skale": "^1.2.0"
+  }
+}
