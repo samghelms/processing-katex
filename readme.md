@@ -1,6 +1,10 @@
-# intro
+# setup
 
-How to run: `node katex_pipeline.js`
+clone the repository and then run `npm init`
+
+Then, just type `node katex_pipeline.js`. You should see the output in your console. 
+
+All of the relevent code is in katex_pipeline.js (this code shouldn't be too hard to read if you have some familiarity with spark).
 
 # Dependencies:
 
