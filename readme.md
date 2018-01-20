@@ -1,6 +1,8 @@
 # setup
 
-clone the repository and then run `npm init`
+(You will need to have node package manager [npm] and node installed)
+
+clone the repository and then run `npm install` 
 
 Then, just type `node katex_pipeline.js`. You should see the output in your console. 
 
