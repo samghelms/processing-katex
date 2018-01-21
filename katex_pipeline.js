@@ -48,7 +48,7 @@ const main = (argv) => {
   }
   // var partd = partitionStream(stream)
   const arr = file.split("\n")
-  processStream(arr)
+  // processStream(arr)
 }
 
 main(process.argv)
