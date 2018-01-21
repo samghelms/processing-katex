@@ -21,10 +21,11 @@ const parse = (arr) => {
       return katex.__parse(str, {throwOnError: false})
     }
     catch(err) {
-      return "error"
+      console.log(err)
+      return "could not parse"
     }
   }
-  return "error"
+  return "Incorrect data format"
 }
 
 const processStream = (arr) => {
