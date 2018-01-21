@@ -18,6 +18,7 @@ const prepLine = (line) => {
 const parse = (arr) => {
   if(arr.length === 2) {
     try {
+      const str = arr[1]
       return katex.__parse(str, {throwOnError: false})
     }
     catch(err) {
