@@ -14,19 +14,22 @@ const prepLine = (line) => {
   return cleanLine.split("\t")
 }
 
-const parse = (str) => {
-  try {
-    return katex.__parse(str, {throwOnError: false})
+const parse = (arr) => {
+  if(arr.length === 2) {
+    try {
+      return katex.__parse(str, {throwOnError: false})
+    }
+    catch(err) {
+      return "error"
+    }
   }
-  catch(err) {
-    return "error"
-  }
+  return "error"
 }
 
 const processStream = (stream) => {
   sc.require({katex: './lib/katex/katex.min.js'}).lineStream(stream)
     .map(prepLine)
-    .map(arr=> arr.length === 2 ? parse(arr[1]): "Error" )
+    .map(parse)
     .save("testOut/").then(()=>sc.end());
 }
 
