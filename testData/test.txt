@@ -8,3 +8,18 @@ EQDS136336Q	\\begin{equation}  \nS_{V} \\left(\\omega \\right)=\\frac{1}{4\\pi i
 EQDS281322Q	\\begin{equation}\\| \\beta_{{\\cal N}_k } \\|_r^r \\le s^{-(r-1)}\\| \\beta_{{\\cal N}_{k-1}} \\|_1^r  . \\end{equation}
 EQDS239490Q	\\begin{equation}\n  \n  {\\mathbb P} \\bigg[ {\\lambda_{\\max}}({\\mathscr S}({{\\boldsymbol Z}}_t)) \\geq \\sqrt{2xv} ~,~~~ {\\lambda_{\\max}}( {{\\boldsymbol V}}_t ) \\le v \\bigg] \\leq (m+n) e^{-x}.\n\\end{equation}
 EQDS128274Q	\\begin{equation}\n{M} =N({M})\\sum_{k=1}^{M} kp(k)\n\n\\end{equation}
+EQIX857163Q	$R^*_{\\mbox{\\scriptsize cMB}}$
+EQIX751820Q	$\\Vert {\\theta}_2 \\Vert_1  \\leq R$
+EQIX711721Q	$x^{j}_m$
+EQIX846059Q	$(\\balpha,\\bs)$
+EQIX731029Q	$ and is computed using (\\ref{supp_est}). At $
+EQIX1058084Q	$ is large, as is the case in most stochastic problems of practical interest and motivates the use of stochastic gradients in lieu of actual gradients. Consider a given set of $
+EQIX571682Q	${\\mathbb{P}}[{\\lambda_{\\min}}({\\mathbb{{X}}} {\\mathbb{{X}}}^T)\\geq m\\gamma^2] \\geq \\delta$
+EQIX986177Q	$\\mathbf{|{\\ensuremath{{S_A}}}|}$
+EQIX134129Q	$(\\kPer + \\kC) \\times (\\kLin + \\kC) = \\kC + \\kPer + \\kLin + \\kPer \\times \\kLin$
+EQIX199403Q	$P\\bigl([x]y\\bigr)P(x)=P(x\\cap [x]y)$
+EQIX328342Q	${\\mathit{lab}}_t:N_t\\rightarrow\\Sigma$
+EQIX557963Q	$ is a proper convex combination of $
+EQIX11174Q	$A^{i+1}{\\mbox{\\boldmath $
+EQIX115278Q	$a_i^{\\ensuremath{\\mathfrak{A}}} = (i,0)$
+EQIX895450Q	$var(u^2)=2p^2$

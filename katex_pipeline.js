@@ -9,6 +9,7 @@ var skale = require('skale')
 const prepLine = (line) => {
   const slashRegex = /\\\\/gi;
   const cleanLine = line.replace(slashRegex, '\\')
+                        .replace(/\$/gi, "")
                         .replace("\\begin{equation}", "")
                         .replace("\\end{equation}", "");
   return cleanLine.split("\t")
@@ -21,11 +22,10 @@ const parse = (arr) => {
       return katex.__parse(str, {throwOnError: false})
     }
     catch(err) {
-      console.log(err)
-      return "could not parse"
+      return "could not parse: "+JSON.stringify(arr)
     }
   }
-  return "Incorrect data format"
+  return "Incorrect data format: "+ JSON.stringify(arr)
 }
 
 const processStream = (arr) => {
