@@ -1,3 +1,10 @@
-\int x
-x = y
-100^5
+EQDS4270Q	\\begin{equation}  \\end{equation}
+EQDS196439Q	\\begin{equation}\n\\widehat{\\lambda}_{j,T} = \\frac{1}{T} \\sum_{t=1}^T {\\mathbb{I}}_{ \\{ \\widehat{m}_t = m^{(j)} \\} }\\,,\n\\end{equation}
+EQDS159992Q	\\begin{equation}\n\\begin{aligned}\nK(\\varepsilon) \\leq k(1) + k\\left(\\frac{1}{2}\\right) + k\\left(\\frac{1}{4}\\right) \\ldots + k\\left(\\frac{1}{2^{\\lceil\\log_2 1/\\varepsilon \\rceil - 1}}\\right)\\\\\nK(\\varepsilon) \\leq 32L \\left(1 + 2 + 4 \\ldots + 2^{\\lceil\\log_2 1/\\varepsilon \\rceil - 1}\\right)\\\\\n \\leq 32L \\left(2^{\\lceil\\log_2 1/\\varepsilon \\rceil} - 1\\right) \\leq \\frac{64L}{\\varepsilon}.\n\\end{aligned}\n\\end{equation}
+EQDS296065Q	\\begin{equation}\\textrm{s.t.}~~\\phi(\\mathbf{u}_i):=\\frac{1}{2}\\|\\mathbf{r}_i^{\\star}-\\mathbf{u}_i\\|_2^2+\\lambda\\|\\mathbf{u}_i\\|_2,~i=1,\\ldots,k.\\end{equation}
+EQDS167332Q	\\begin{equation}\n{\\frac 1 {1+{\\epsilon}_3}} \\cdot {\\frac 1 {B}}\n\\leq \\hat{D}'(x) \\leq\n(1+{\\epsilon}_3) \\cdot {\\frac 1 {B}}.\n\\end{equation}
+EQDS300636Q	\\begin{equation}\n\\hat\\sigma_{ij}^2- \\sigma_{ij}^2 = 2\\sigma_{ij}(\\hat\\sigma_{ij}-\\sigma_{ij})+ (\\hat\\sigma_{ij}-\\sigma_{ij})^2\\,,\n\\end{equation}
+EQDS136336Q	\\begin{equation}  \nS_{V} \\left(\\omega \\right)=\\frac{1}{4\\pi i} \\int _{\\rho -i\\infty }^{\\rho +i\\infty }\\Lambda _{V} \\left(-\\gamma \\right)\\left|\\omega \\right|^{\\gamma -1} d\\gamma   \n\\end{equation}
+EQDS281322Q	\\begin{equation}\\| \\beta_{{\\cal N}_k } \\|_r^r \\le s^{-(r-1)}\\| \\beta_{{\\cal N}_{k-1}} \\|_1^r  . \\end{equation}
+EQDS239490Q	\\begin{equation}\n  \n  {\\mathbb P} \\bigg[ {\\lambda_{\\max}}({\\mathscr S}({{\\boldsymbol Z}}_t)) \\geq \\sqrt{2xv} ~,~~~ {\\lambda_{\\max}}( {{\\boldsymbol V}}_t ) \\le v \\bigg] \\leq (m+n) e^{-x}.\n\\end{equation}
+EQDS128274Q	\\begin{equation}\n{M} =N({M})\\sum_{k=1}^{M} kp(k)\n\n\\end{equation}
