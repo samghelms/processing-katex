@@ -28,13 +28,13 @@ const parse = (arr) => {
   return "Incorrect data format: "+ JSON.stringify(arr)
 }
 
-const processStream = (arr) => {
+const processStream = (filename) => {
 
   var sc = require('skale').context();
 
-  sc.require({katex: './lib/katex/katex.min.js'}).parallelize(arr)
-    // .map(prepLine)
-    // .map(parse)
+  sc.require({katex: './lib/katex/katex.min.js'}).textFile(filename)
+    .map(prepLine)
+    .map(parse)
     .save("testOut/", {stream: true}).then(()=>sc.end());
 }
 
@@ -47,8 +47,9 @@ const main = (argv) => {
     console.log("invalid filename")
   }
   // var partd = partitionStream(stream)
-  const arr = file.split("\n")
-  processStream(arr)
+  // specify the protocol
+  const filename = argv[2]
+  processStream(filename)
 }
 
 main(process.argv)
