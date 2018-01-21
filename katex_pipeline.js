@@ -26,8 +26,8 @@ const parse = (arr) => {
   return "error"
 }
 
-const processStream = (stream) => {
-  sc.require({katex: './lib/katex/katex.min.js'}).lineStream(stream)
+const processStream = (file) => {
+  sc.require({katex: './lib/katex/katex.min.js'}).textFile(file)
     .map(prepLine)
     .map(parse)
     .save("testOut/", {gzip: true, stream: true}).then(()=>sc.end());
@@ -41,7 +41,7 @@ const main = (argv) => {
   } catch(err) {
     console.log("invalid filename")
   }
-  processStream(stream)
+  processStream(argv[2])
 }
 
 main(process.argv)
