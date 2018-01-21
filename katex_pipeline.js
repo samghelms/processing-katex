@@ -33,8 +33,8 @@ const processStream = (arr) => {
   var sc = require('skale').context();
 
   sc.require({katex: './lib/katex/katex.min.js'}).parallelize(arr)
-    .map(prepLine)
-    .map(parse)
+    // .map(prepLine)
+    // .map(parse)
     .save("testOut/", {stream: true}).then(()=>sc.end());
 }
 
@@ -48,7 +48,7 @@ const main = (argv) => {
   }
   // var partd = partitionStream(stream)
   const arr = file.split("\n")
-  // processStream(arr)
+  processStream(arr)
 }
 
 main(process.argv)
