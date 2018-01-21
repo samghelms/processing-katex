@@ -4,6 +4,7 @@ The main interface for the parsing pipeline.
 */
 const assert = require('assert');
 const fs = require('fs');
+var skale = require('skale')
 var sc = require('skale').context();
 
 const prepLine = (line) => {
@@ -26,11 +27,20 @@ const parse = (arr) => {
   return "error"
 }
 
-const processStream = (file) => {
-  sc.require({katex: './lib/katex/katex.min.js'}).textFile(file)
+const processStream = (filename) => {
+
+  sc.require({katex: './lib/katex/katex.min.js'}).textFile(filename)
     .map(prepLine)
     .map(parse)
-    .save("testOut/", {gzip: true, stream: true}).then(()=>sc.end());
+    .save("testOut/", {stream: true}).then(()=>sc.end());
+}
+
+const partitionStream = (stream) => {
+
+  var partitioned = sc.lineStream(stream).getPartitions()
+
+  return partitioned
+
 }
 
 const main = (argv) => {
@@ -41,6 +51,8 @@ const main = (argv) => {
   } catch(err) {
     console.log("invalid filename")
   }
+  // var partd = partitionStream(argv[2])
+  // console.log(partd)
   processStream(argv[2])
 }
 
